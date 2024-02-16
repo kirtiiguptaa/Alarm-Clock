@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm clock</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="clock"></div>
+        <input onchange="setAlarmTime(this.value)" name="alarmTime" type="datetime-local"/>
+        <div class="controls">
+          <button onclick="setAlarm()" class="button set-alarm">Set alarm</button>
+          <button onclick="clearAlarm()" class="button clear-alarm">Clear alarm</button>
+        </div>
+      </div>
+
+</body>
+</html>
